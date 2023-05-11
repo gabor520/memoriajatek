@@ -2,7 +2,7 @@ img{
     width: 200px;
 }
 main{
-    flex-direction: column;
+    flex-direction: wrap;
     display: flex;
-    flex-wrap: wrap;
+    aspect-ratio: 1/1;
 }

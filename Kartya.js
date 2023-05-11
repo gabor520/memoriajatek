@@ -10,7 +10,11 @@ class Kartya {
         szuloElem.append(txt);
         this.#divElem = szuloElem.children("div:last-child");
         this.#imgElem = this.#divElem.children("img:last-child");
-        this.#setKep("kepek/hatter.jpg");
+        this.setKep("./kepek/hatter.jpg")
+        this.#imgElem.on("click",()=>{
+            this.setKep(this.#adat)
+
+        })
         
     }
 
@@ -18,7 +22,7 @@ class Kartya {
         return this.#adat;
     }
     setKep(adat){
-        this.#imgElem.attr("scr",adat)
+        this.#imgElem.attr("src",adat)
     }
 
     trigger(){
