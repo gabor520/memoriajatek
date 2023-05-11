@@ -1,0 +1,8 @@
+img{
+    width: 200px;
+}
+main{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
